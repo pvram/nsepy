@@ -10,7 +10,7 @@ end = datetime(2018, 1, 1)
 
 data = get_history(symbol='SBIN',start=start,end=end, outpu_format = 'pandas')
 
-data.head()
+print data.head()
 
-data.tail()
+
 
