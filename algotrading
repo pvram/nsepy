@@ -1,0 +1,16 @@
+Installing nsepy for Importing data from NSEwebsite
+$pip install nsepy
+To fetch historical data of stocks from nsepy, you have to use "get_history" function which returns daily data of stock's ticker requested over the desired timeframe in a pandas format
+Importing data from NSEpy
+from nsepy import get_history
+from datetime import datetime
+
+start = datetime(2017, 1, 1)
+end = datetime(2018, 1, 1)
+
+data = get_history(symbol='SBIN',start=start,end=end, outpu_format = 'pandas')
+
+data.head()
+
+data.tail()
+
